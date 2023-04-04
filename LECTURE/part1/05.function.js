@@ -12,3 +12,15 @@ console.log(add()); //
 
 // 함수 표현식 (hoisting 안 됨. 즉, 무조건 호출이 아래에서 이루어져야 함.)
 let add2 = (num1, num2) => num1 + num2;
+
+// 단축평가
+
+// 👉 파라미터 && 인자
+// 파라미터 종류
+// 👉 default parameter : 원래 파라미터의 default값은 undefined인데 값을 10으로 바꿈!
+let defaultParameter = (num1 = 10) => num1;
+console.log(defaultParameter()); // 값을 안 넣어도 10으로 default됨
+
+// 👉 rest parameter
+let printNumbers = (...numbers) => numbers; // 배열로!
+console.log(printNumbers(1, 2, 3, 4, 5, 6, 7, 8));
