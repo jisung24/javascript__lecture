@@ -13,7 +13,7 @@ while (map.size < 3) {
     map.set(randomValue, map.size); // index까지 같이 넣어줌!
   }
 }
-console.log([...map.keys()]);
+console.log("컴퓨터 값 >> ", [...map.keys()]);
 
 let readline = require("readline");
 
@@ -23,11 +23,10 @@ let r = readline.createInterface({
 });
 let i = 1;
 r.setPrompt(`${i}번째 시도!`);
-i += 1;
 r.prompt();
 r.on("line", function (line) {
-  r.setPrompt(`${i}번째 시도!`);
   i += 1;
+  r.setPrompt(`${i}번째 시도!`);
   if (line == [...map.keys()].join("")) {
     // 'exit'을 입력받으면 끝!!!!
     console.log(`${i}번만에 맞히셨습니다!`);
