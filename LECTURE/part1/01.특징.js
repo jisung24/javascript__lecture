@@ -30,3 +30,22 @@
 // - 일단 함수를 사용해서 프로그래밍을 지원한다!
 // 👉 비동기 처리 : 순차적으로 기다리지 않고, 병렬로 처리할 수 있도록 하는 방식을 의미한다.
 // 👉 클라이언트, 서버 모두 사용이 가능하다. (nodejs사용!)
+
+console.log(parseInt(2 / 3)); // 내림 효과 있음! Math.floor
+console.log(0 / 4); // 0을 4등분해도 0은 그냥 0
+console.log(typeof (10 / 0)); // 무한!
+
+console.log((1.23).toFixed(1)); //)
+
+console.log(parseFloat(10).toFixed(1));
+
+let str = "dwdwafegegesgesgeegssaaaaaasdwdwfwwfwfadsfadw";
+console.log(str.replace("w", "")); // 맨 앞 w만!
+//a를 b로 대체할거야!
+// replace (맨 앞에 있는 값 1개만)
+// 모든 a값!
+
+let a = "abcd";
+console.log(a.repeat(4));
+
+console.log("1" + "3");

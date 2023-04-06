@@ -8,9 +8,10 @@ let s = "Pyy";
  */
 let countOfPY = (str) => {
   let capitalized = str
-    .toUpperCase()
-    .split("")
+    .toUpperCase() // Pp PP
+    .split("") // str => arr ['P','Y,'Y'];
     .reduce(
+      // only array
       (acc, cur) => {
         if (cur === "P") {
           acc[0] += 1;
@@ -27,3 +28,16 @@ let countOfPY = (str) => {
 };
 
 console.log(countOfPY(s));
+
+// 합
+{
+  let arr = [1, 2, 3, 4, 5, 6];
+  let reduceArr = arr.reduce((acc, cur) => {
+    return acc * cur;
+    // acc = 1
+
+    // cur = 2
+    // cur = 3 4 5 6
+  });
+  console.log(`합 >> ${reduceArr}`);
+}
